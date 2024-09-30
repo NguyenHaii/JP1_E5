@@ -1,7 +1,7 @@
 package Entity;
 
 public class Customer {
-    private int Id_Customer;
+    private int id2;
     private String Name;
     private Gender gender;
     private int discount;
@@ -9,19 +9,19 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String name, int id_Customer, Gender gender, int discount) {
+    public Customer(String name, int id2, Gender gender, int discount) {
         Name = name;
-        Id_Customer = id_Customer;
+        id2 = id2;
         this.gender = gender;
         this.discount = discount;
     }
 
-    public int getId_Customer() {
-        return Id_Customer;
+    public int getid2() {
+        return id2;
     }
 
-    public void setId_Customer(int id_Customer) {
-        Id_Customer = id_Customer;
+    public void setid2(int id2) {
+        id2 = id2;
     }
 
     public String getName() {
@@ -51,7 +51,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "Id_Customer=" + Id_Customer +
+                "id2=" + id2 +
                 ", Name='" + Name + '\'' +
                 ", gender=" + gender +
                 ", discount=" + discount +
