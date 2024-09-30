@@ -1,24 +1,24 @@
 package Entity;
 
 public class Account extends Customer {
-    private int Id_Account;
+    private int id1;
     private double balance;
 
     public Account() {
     }
 
-    public Account(int id_Account,String name, int id_Customer, Gender gender, int discount, double balance) {
-        super(name, id_Customer, gender, discount);
-        Id_Account = id_Account;
+    public Account(int id1,String name, int id2, Gender gender, int discount, double balance) {
+        super(name, id2, gender, discount);
+        id1 = id1;
         this.balance = balance;
     }
 
-    public int getId_Account() {
-        return Id_Account;
+    public int getid1() {
+        return id1;
     }
 
-    public void setId_Account(int id_Account) {
-        Id_Account = id_Account;
+    public void setid1(int id1) {
+        id1 = id1;
     }
 
     public double getBalance() {
@@ -45,7 +45,7 @@ public class Account extends Customer {
     @Override
     public String toString() {
         return "Account{" +
-                "Id_Account=" + Id_Account +
+                "id1=" + id1 +
                 ", balance=" + balance +
                 '}';
     }
