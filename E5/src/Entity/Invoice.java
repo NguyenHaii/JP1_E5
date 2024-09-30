@@ -3,26 +3,26 @@ package Entity;
 import java.time.LocalDate;
 
 public class Invoice extends Customer {
-    private int id_Invoice;
+    private int id3;
     private double amount;
     private LocalDate date;
 
     public Invoice() {
     }
 
-    public Invoice(int id_Invoice, String name, int id_Customer, Gender gender, int discount, double amount, LocalDate date) {
-        super(name, id_Customer, gender, discount);
-        this.id_Invoice = id_Invoice;
+    public Invoice(int id3, String name, int id2, Gender gender, int discount, double amount, LocalDate date) {
+        super(name, id2, gender, discount);
+        this.id3 = id3;
         this.amount = amount;
         this.date = date;
     }
 
-    public int getId_Invoice() {
-        return id_Invoice;
+    public int getid3() {
+        return id3;
     }
 
-    public void setId_Invoice(int id_Invoice) {
-        this.id_Invoice = id_Invoice;
+    public void setid3(int id3) {
+        this.id3 = id3;
     }
 
     public double getAmount() {
@@ -48,7 +48,7 @@ public class Invoice extends Customer {
     @Override
     public String toString() {
         return "Invoice{" +
-                "id_Invoice=" + id_Invoice +
+                "id3=" + id_Invoice +
                 ", name=" + this.getName() +
                 ", gender=" + this.getGender() +
                 ", amount=" + amount +
